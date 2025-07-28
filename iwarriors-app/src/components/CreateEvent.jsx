@@ -22,6 +22,10 @@ export function CreateEvent() {
                 <input type='text' name='city' id='city' />
             </div>
             <div>
+                <label htmlFor='county'>County: </label>
+                <input type='text' name='county' id='county' />
+            </div>
+            <div>
                 <label htmlFor='state'>State: </label>
                 <select name='state' id='state'>
                     <option>Select a state</option>
@@ -81,6 +85,10 @@ export function CreateEvent() {
             <div>
                 <label htmlFor='zip-code'>Zip Code: </label>
                 <input type='number' name='zip-code' id='zip-code' />
+            </div>
+            <div>
+                <label htmlFor='event-description'>Event Description:</label>
+                <textarea name='event-description' id='event-description' rows='5' cols='30'></textarea>
             </div>
             <br />
             <input type='submit' value='Create Event' />
