@@ -2,6 +2,12 @@ import { Fragment } from 'react';
 import Proptypes from 'prop-types';
 import { Provider } from './Provider';
 
+ProviderList.Proptypes = {
+    provider: Proptypes.arrayOf(
+        Proptypes.shape(provider.Proptypes)
+    ).isRequired,
+};
+
 export function ProvidersList({ providers = [] }) {
     return (
         <div>

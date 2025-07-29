@@ -1,3 +1,4 @@
+import { AddProvider } from '@/components/AddProvider';
 export default function AddProviderPage() {
-    return <strong>Add Provider Page</strong>;
+    return <AddProvider />
 }
