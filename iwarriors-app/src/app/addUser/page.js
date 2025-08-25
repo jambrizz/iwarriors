@@ -1,3 +1,5 @@
+import { AddUser } from '@/components/AddUser';
+
 export default function AddUserPage() {
-    return <strong>Add User Page</strong>
+    return <AddUser />
 }

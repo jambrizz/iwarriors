@@ -10,14 +10,19 @@ ProviderList.Proptypes = {
 
 export function ProvidersList({ providers = [] }) {
     return (
-        <div>
-            {providers.map((provider) => ( 
-                <Fragment key={`provider-${provider._id}`}>
-                    <Provider _id={provider._id} name={provider.name} />
-                    <hr />
-                </Fragment>
-                ))
-            }
-        </div>
+        <>
+            <div>
+                <strong>Filter section</strong>
+            </div>
+            <div>
+                {providers.map((provider) => ( 
+                    <Fragment key={`provider-${provider._id}`}>
+                        <Provider _id={provider._id} name={provider.name} />
+                        <hr />
+                    </Fragment>
+                    ))
+                }
+            </div>
+        </>
     )
 }
